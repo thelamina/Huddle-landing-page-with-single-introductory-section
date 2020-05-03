@@ -11,10 +11,14 @@
 }
 
 body{
-  background: var(--Violet);
+  background: url('images/bg-mobile.svg') no-repeat center center /cover;
+  background-attachment: fixed;
   color: #ffffff;
 }
 
+.op{
+  background: hsla(257, 40%, 49%, 0.87);
+}
 .logo{
 }
 
@@ -73,7 +77,7 @@ a{
 
 .icon{
   text-align: center;
-  margin: 30px 0;
+  padding: 30px 0;
 }
 
 .fab{
@@ -94,3 +98,60 @@ a{
   text-align: center; 
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen and (min-width:712px){
+  body{
+    background: url('images/bg-desktop.svg') no-repeat center center/cove;
+  }
+  main{
+    margin: auto;
+    max-width: 1200px;
+  }
+
+  .logo img{
+    height: 100%;
+    width: 170px;
+  }
+
+  .show{
+   display: grid;
+   grid-template-columns: 1.3fr 1fr;
+   padding-bottom: 0;
+  }
+
+  .fig img{
+    width: 100%;
+    /* height:100%; */
+  }
+  .fig{
+    place-self: center center;
+  }
+
+  .info{
+    /* place-self:; */
+    text-align: left;
+    padding: 50px 0 0 35px ;
+  }
+  .icon{
+    text-align: right;
+    padding-right: 50px;
+    /* padding: 0; */
+    margin: 0px;
+  }
+
+  h1{
+    /* font-weight: ; */
+    font-size: 36px;
+  }
+  p{
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:376px){
+h1{
+
+}
+}
